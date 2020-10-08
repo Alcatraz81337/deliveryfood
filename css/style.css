@@ -151,6 +151,7 @@ body {
 }
 .card-title-reg {
   font-weight: normal;
+  margin-bottom: 10px;
 }
 .card-tag {
   font-style: normal;
@@ -166,11 +167,11 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 24px;
 }
 .card-buttons {
   display: flex;
   align-items: center;
+  margin-top: 24px;
 }
 .card-price-bold {
   margin-left: 30px;
@@ -256,6 +257,9 @@ body {
   .promo {
     background-position: center right -200px;
     background-size: 750px;
+  }
+  .input-search {
+    margin-left: 0;
   }
   .rating {
     margin-right: 15px;
