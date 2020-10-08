@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delivery Food</title>
+    <title>Тануки</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,9 +15,8 @@
     <div class="container">
       <header class="header">
         <a href="index.html" class="logo">
-          <img src="img\logo.svg" alt="Logo"/>
+          <img src="img\logo.svg" alt="Logo" />
         </a>
-        
         <input
           type="text"
           class="input input-address"
@@ -39,24 +38,17 @@
 
     <main class="main">
       <div class="container">
-        <section class="promo">
-          <h1 class="promo-title">
-            Онлайн-сервис <br />
-            доставки еды на дом
-          </h1>
-          <p class="promo-text">
-            Блюда из любимого ресторана привезет курьер в перчатках, маске и с
-            антисептиком
-          </p>
-        </section>
         <section class="reasturants">
           <div class="section-heading">
-            <h2 class="section-title">Рестораны</h2>
-            <input
-              type="text"
-              class="input input-search"
-              placeholder="Поиск блюд и ресторанов"
-            />
+            <h2 class="section-title">Тануки</h2>
+            <div class="card-info">
+              <div class="rating">
+                <img src="img\rating.svg" alt="Rating" /> 4.3
+              </div>
+              <div class="price">От 500 ₽</div>
+              <div class="category">Суши</div>
+            </div>
+            <!-- /.card-info -->
           </div>
           <div class="cards">
             <div class="card">
@@ -67,24 +59,33 @@
               />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Пицца плюс</h3>
-                  <span class="card-tag tag">50 мин</span>
+                  <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
                 </div>
                 <!-- /.card-heading -->
                 <div class="card-info">
-                  <div class="rating">
-                    <img src="img\rating.svg" alt="Rating" /> 4.5
-                  </div>
                   <div class="price">От 900 ₽</div>
-                  <div class="category">Пицца</div>
+                  <div class="ingredients">
+                    Рис, угорь, соус унаги, кунжут, водоросли нори.
+                  </div>
                 </div>
                 <!-- /.card-info -->
+                <div class="card-buttons">
+                  <button class="button button-primary">
+                    <span class="button-card-text">В корзину</span>
+                    <img
+                      src="img\shopping-cart-button.svg"
+                      alt="Cart"
+                      class="button-card-image"
+                    />
+                  </button>
+                  <strong class="card-price-bold">250 ₽</strong>
+                </div>
               </div>
               <!-- /.card-text -->
             </div>
             <!-- /.card -->
 
-            <a href="restaurant.html" class="card">
+            <div class="card">
               <img
                 src="img\cards\2card.jpg"
                 alt="2nd Image"
@@ -92,21 +93,30 @@
               />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Тануки</h3>
-                  <span class="card-tag tag">20 мин</span>
+                  <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
                 </div>
                 <!-- /.card-heading -->
                 <div class="card-info">
-                  <div class="rating">
-                    <img src="img\rating.svg" alt="Rating" /> 4.3
+                  <div class="price">От 900 ₽</div>
+                  <div class="ingredients">
+                    Рис, угорь, соус унаги, кунжут, водоросли нори.
                   </div>
-                  <div class="price">От 500 ₽</div>
-                  <div class="category">Суши</div>
                 </div>
                 <!-- /.card-info -->
+                <div class="card-buttons">
+                  <button class="button button-primary">
+                    <span class="button-card-text">В корзину</span>
+                    <img
+                      src="img\shopping-cart-button.svg"
+                      alt="Cart"
+                      class="button-card-image"
+                    />
+                  </button>
+                  <strong class="card-price-bold">250 ₽</strong>
+                </div>
               </div>
               <!-- /.card-text -->
-            </a href="">
+            </div>
             <!-- /.card -->
 
             <div class="card">
@@ -117,18 +127,27 @@
               />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">FoodBand</h3>
-                  <span class="card-tag tag">40 мин</span>
+                  <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
                 </div>
                 <!-- /.card-heading -->
                 <div class="card-info">
-                  <div class="rating">
-                    <img src="img\rating.svg" alt="Rating" /> 4.7
+                  <div class="price">От 900 ₽</div>
+                  <div class="ingredients">
+                    Рис, угорь, соус унаги, кунжут, водоросли нори.
                   </div>
-                  <div class="price">От 700 ₽</div>
-                  <div class="category">Фастфуд</div>
                 </div>
                 <!-- /.card-info -->
+                <div class="card-buttons">
+                  <button class="button button-primary">
+                    <span class="button-card-text">В корзину</span>
+                    <img
+                      src="img\shopping-cart-button.svg"
+                      alt="Cart"
+                      class="button-card-image"
+                    />
+                  </button>
+                  <strong class="card-price-bold">250 ₽</strong>
+                </div>
               </div>
               <!-- /.card-text -->
             </div>
@@ -142,18 +161,27 @@
               />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Жадина-пицца</h3>
-                  <span class="card-tag tag">60 мин</span>
+                  <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
                 </div>
                 <!-- /.card-heading -->
                 <div class="card-info">
-                  <div class="rating">
-                    <img src="img\rating.svg" alt="Rating" /> 4.0
-                  </div>
                   <div class="price">От 900 ₽</div>
-                  <div class="category">Пицца от жадин</div>
+                  <div class="ingredients">
+                    Рис, угорь, соус унаги, кунжут, водоросли нори.
+                  </div>
                 </div>
                 <!-- /.card-info -->
+                <div class="card-buttons">
+                  <button class="button button-primary">
+                    <span class="button-card-text">В корзину</span>
+                    <img
+                      src="img\shopping-cart-button.svg"
+                      alt="Cart"
+                      class="button-card-image"
+                    />
+                  </button>
+                  <strong class="card-price-bold">250 ₽</strong>
+                </div>
               </div>
               <!-- /.card-text -->
             </div>
@@ -167,18 +195,27 @@
               />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">Точка еды</h3>
-                  <span class="card-tag tag">50 мин</span>
+                  <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
                 </div>
                 <!-- /.card-heading -->
                 <div class="card-info">
-                  <div class="rating">
-                    <img src="img\rating.svg" alt="Rating" /> 4.9
+                  <div class="price">От 900 ₽</div>
+                  <div class="ingredients">
+                    Рис, угорь, соус унаги, кунжут, водоросли нори.
                   </div>
-                  <div class="price">От 650 ₽</div>
-                  <div class="category">Еда :)</div>
                 </div>
                 <!-- /.card-info -->
+                <div class="card-buttons">
+                  <button class="button button-primary">
+                    <span class="button-card-text">В корзину</span>
+                    <img
+                      src="img\shopping-cart-button.svg"
+                      alt="Cart"
+                      class="button-card-image"
+                    />
+                  </button>
+                  <strong class="card-price-bold">250 ₽</strong>
+                </div>
               </div>
               <!-- /.card-text -->
             </div>
@@ -192,18 +229,27 @@
               />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title">PizzaBurger</h3>
-                  <span class="card-tag tag">45 мин</span>
+                  <h3 class="card-title card-title-reg">Ролл угорь стандарт</h3>
                 </div>
                 <!-- /.card-heading -->
                 <div class="card-info">
-                  <div class="rating">
-                    <img src="img\rating.svg" alt="Rating" /> 4.7
+                  <div class="price">От 900 ₽</div>
+                  <div class="ingredients">
+                    Рис, угорь, соус унаги, кунжут, водоросли нори.
                   </div>
-                  <div class="price">От 400 ₽</div>
-                  <div class="category">Пицца</div>
                 </div>
                 <!-- /.card-info -->
+                <div class="card-buttons">
+                  <button class="button button-primary">
+                    <span class="button-card-text">В корзину</span>
+                    <img
+                      src="img\shopping-cart-button.svg"
+                      alt="Cart"
+                      class="button-card-image"
+                    />
+                  </button>
+                  <strong class="card-price-bold">250 ₽</strong>
+                </div>
               </div>
               <!-- /.card-text -->
             </div>
