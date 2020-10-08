@@ -74,7 +74,6 @@ body {
   border-radius: 10px;
   padding: 68px 70px;
   margin-bottom: 56px;
-  margin: 0;
 }
 .promo-title {
   font-style: normal;
@@ -255,11 +254,8 @@ body {
     max-width: 960px;
   }
   .promo {
-    background-position: center right -200px;
-    background-size: 750px;
-  }
-  .input-search {
-    margin-left: 0;
+    background-position: center right -210px;
+    background-size: 700px;
   }
   .rating {
     margin-right: 15px;
@@ -267,6 +263,12 @@ body {
   .category,
   .price {
     font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .promo {
+    background-position: center right -250px;
+    background-size: 700px;
   }
 }
 @media (max-width: 992px) {
@@ -293,6 +295,12 @@ body {
   .container {
     max-width: 560px;
   }
+  .logo {
+    margin-right: 10px;
+  }
+  .input-address {
+    margin-right: 10px;
+  }
   .card-info {
     flex-wrap: wrap;
   }
@@ -314,6 +322,15 @@ body {
     margin-top: 0;
   }
 }
+@media (max-width: 636px) {
+  .promo-text {
+    max-width: 300px;
+  }
+  .promo {
+    background-size: 500px;
+    background-position: bottom 50px right -200px;
+  }
+}
 @media (max-width: 578px) {
   .container {
     width: 90%;
@@ -322,12 +339,19 @@ body {
     flex-wrap: wrap;
   }
   .input-address {
+    order: 3;
+    margin-top: 15px;
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+  .input-search {
     margin-top: 15px;
     order: 5;
     flex: 1;
   }
   .promo {
-    background-image: none;
+    background-size: 500px;
+    background-position: bottom -5px right -250px;
   }
   .promo-title {
     margin-bottom: 10px;
@@ -361,6 +385,11 @@ body {
   }
   .social-links {
     order: 2;
+  }
+  @media (max-width: 558px) {
+    .promo {
+      background-image: none;
+    }
   }
 }
 @media (max-width: 480px) {
