@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тануки</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css\animate.min.css" />
     <link rel="stylesheet" href="css\normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <a href="index.html" class="logo">
-          <img src="img\logo.svg" alt="Logo" />
-        </a>
+      <header class="header wow animate__animated animate__slideInDown">
+        <a href="index.html" class="logo"> <img src="img\logo.svg" alt="Logo" /></a>
         <input
           type="text"
           class="input input-address"
@@ -27,7 +23,7 @@
             <img src="img\dude.svg" alt="User" class="button-icon" />
             <span class="button-text">Войти</span>
           </button>
-          <button class="button">
+          <button class="button" id="cart-button">
             <img src="img\shopping-cart.svg" alt="Cart" class="button-icon" />
             <span class="button-text">Корзина</span>
           </button>
@@ -40,8 +36,8 @@
       <div class="container">
         <section class="reasturants">
           <div class="section-heading">
-            <h2 class="section-title">Тануки</h2>
-            <div class="card-info">
+            <h2 class="section-title wow animate__animated animate__fadeIn" data-wow-delay="0.4s">Тануки</h2>
+            <div class="card-info wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
               <div class="rating">
                 <img src="img\rating.svg" alt="Rating" /> 4.3
               </div>
@@ -51,7 +47,7 @@
             <!-- /.card-info -->
           </div>
           <div class="cards">
-            <div class="card">
+            <div class="card wow animate__animated animate__fadeInDown">
               <img
                 src="img\tanuki\1dish.jpg"
                 alt="1st Image"
@@ -84,7 +80,7 @@
             </div>
             <!-- /.card -->
 
-            <div class="card">
+            <div class="card wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
               <img
                 src="img\tanuki\2dish.jpg"
                 alt="2nd Image"
@@ -120,7 +116,7 @@
             </div>
             <!-- /.card -->
 
-            <div class="card">
+            <div class="card wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">
               <img
                 src="img\tanuki\3dish.jpg"
                 alt="3rd Image"
@@ -154,7 +150,7 @@
             </div>
             <!-- /.card -->
 
-            <div class="card">
+            <div class="card wow animate__animated animate__fadeInDown" data-wow-delay="0.6s">
               <img
                 src="img\tanuki\4dish.jpg"
                 alt="4th Image"
@@ -187,7 +183,7 @@
             </div>
             <!-- /.card -->
 
-            <div class="card">
+            <div class="card wow animate__animated animate__fadeInDown" data-wow-delay="0.8s">
               <img
                 src="img\tanuki\5dish.jpg"
                 alt="5th Image"
@@ -221,7 +217,7 @@
             </div>
             <!-- /.card -->
 
-            <div class="card">
+            <div class="card wow animate__animated animate__fadeInDown" data-wow-delay="1s">
               <img
                 src="img\tanuki\6dish.jpg"
                 alt="6th Image"
@@ -262,7 +258,7 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__slideInUp">
       <div class="container">
         <div class="footer-block">
           <img src="img\logo.svg" alt="Logo" class="logo footer-logo" />
@@ -286,5 +282,67 @@
         </div>
       </div>
     </footer>
+
+<div class="modal">
+  <div class="modal-dialog wow animate__animated animate__fadeInUp">
+    <div class="modal-header">
+      <h3 class="modal-title">Корзина</h3>
+      <button class="close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="food-row">
+        <span class="food-name">Ролл угорь стандарт</span>
+        <strong class="food-price">250 ₽</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div>
+      </div>
+      <!-- /.foods-row -->
+      <div class="food-row">
+        <span class="food-name">Ролл угорь стандарт</span>
+        <strong class="food-price">250 ₽</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div>
+      </div>
+      <!-- /.foods-row -->
+      <div class="food-row">
+        <span class="food-name">Ролл угорь стандарт</span>
+        <strong class="food-price">250 ₽</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div>
+      </div>
+      <!-- /.foods-row -->
+      <div class="food-row">
+        <span class="food-name">Ролл угорь стандарт</span>
+        <strong class="food-price">250 ₽</strong>
+        <div class="food-counter">
+          <button class="counter-button">-</button>
+          <span class="counter">1</span>
+          <button class="counter-button">+</button>
+        </div>
+      </div>
+      <!-- /.foods-row -->
+    </div>
+    <!-- .modal-body -->
+    <div class="modal-footer">
+      <span class="modal-pricetag">Цена</span>
+      <div class="footer-buttons">
+        <button class="button button-primary">Оформить заказ</button>
+        <button class="button">Отмена</button>
+      </div>
+    </div>
+    <!-- /.modal-footer -->
+  </div>
+</div>
+<script src="js\wow.min.js"></script>
+<script src="js\main.js"></script>
   </body>
 </html>
