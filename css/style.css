@@ -494,6 +494,38 @@ body {
   .social-links {
     order: 2;
   }
+  /* modal */
+  .food-row {
+    align-items: center;
+  }
+  .food-name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .food-price {
+    max-width: 58px;
+    margin-right: 27px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .footer-buttons {
+    flex-direction: column;
+  }
+  .modal-footer {
+    align-items: flex-start;
+  }
+  .modal-pricetag {
+    padding: 15px 15px;
+  }
+  .cancel {
+    margin-top: 10px;
+    flex-basis: 100%;
+    margin-left: auto;
+    justify-content: center;
+  }
+  .button-primary-footer {
+    margin-right: 0;
+  }
 }
 @media (max-width: 558px) {
   .promo {
@@ -535,5 +567,54 @@ body {
   }
   .footer-link:not(:last-child) {
     margin-right: 0;
+  }
+  /* modal */
+  .food-row {
+    display: flex;
+  }
+  .food-name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .food-price {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .food-counter {
+    margin-left: 0;
+  }
+  .footer-buttons {
+    flex-direction: column;
+  }
+  .modal-footer {
+    align-items: flex-start;
+  }
+  .modal-pricetag {
+    padding: 15px 15px;
+  }
+  .cancel {
+    margin-top: 10px;
+    flex-basis: 100%;
+    margin-left: auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 442px) {
+  .food-row {
+    flex-wrap: wrap;
+    vertical-align: middle;
+  }
+  .food-name {
+    order: 1;
+  }
+  .food-price {
+    order: 3;
+    min-width: 60px;
+    flex-basis: 100%;
+  }
+  .food-counter {
+    order: 2;
   }
 }
