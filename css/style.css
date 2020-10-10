@@ -270,6 +270,7 @@ body {
   border-radius: 5px;
   margin: auto;
   padding: 40px 45px;
+  overflow: auto;
 }
 .modal-header {
   display: flex;
@@ -569,9 +570,7 @@ body {
     margin-right: 0;
   }
   /* modal */
-  .food-row {
-    display: flex;
-  }
+
   .food-name {
     font-size: 16px;
     line-height: 30px;
@@ -604,7 +603,7 @@ body {
 @media (max-width: 442px) {
   .food-row {
     flex-wrap: wrap;
-    vertical-align: middle;
+    margin-bottom: 5px;
   }
   .food-name {
     order: 1;
@@ -616,5 +615,18 @@ body {
   }
   .food-counter {
     order: 2;
+  }
+}
+@media (max-width: 321px) {
+  .food-name {
+    order: 1;
+  }
+  .food-price {
+    order: 2;
+    min-width: 60px;
+    flex-basis: 100%;
+  }
+  .food-counter {
+    order: 3;
   }
 }

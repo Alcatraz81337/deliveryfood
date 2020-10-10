@@ -11,16 +11,27 @@ function toggleModal() {
   modal.classList.toggle("modal-active");
 }
 
-new WOW().init();
+wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       false,      // not default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
 
 const modalDialog = document.querySelector("#modal-dialog")
 let class1 = 'wow animate__animated';
 let class2 = 'animate__fadeInUp';
-const classes = class1.split(' ').concat(class2);
+let class3 = 'animate__fadeOutDown';
+const classesAppear = class1.split(' ').concat(class2);
+/* const classesDisAppear = class1.split(' ').concat(class3); */
 
 modalDialog.addEventListener('click', function (event) {
-modalDialog.classList.remove(...classes);
-modalDialog.classList.add(...classes);
+modalDialog.classList.remove(...classesAppear);
+modalDialog.classList.add(...classesAppear);
 });
 
 
